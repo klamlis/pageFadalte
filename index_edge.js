@@ -26,7 +26,13 @@ var symbols = {
     resizeInstances: false,
     content: {
             dom: [
-],
+            {
+                id: 'Rectangle',
+                type: 'rect',
+                rect: ['0px', '741px','1024px','27px','auto', 'auto'],
+                fill: ["rgba(192,192,192,1)"],
+                stroke: [0,"rgba(0,0,0,1)","none"]
+            }],
             symbolInstances: [
 
             ]
@@ -38,6 +44,12 @@ var symbols = {
                 ["style", "width", '1024px'],
                 ["style", "height", '768px'],
                 ["style", "overflow", 'hidden']
+            ],
+            "${_Rectangle}": [
+                ["style", "height", '27px'],
+                ["style", "top", '741px'],
+                ["style", "left", '0px'],
+                ["style", "width", '1024px']
             ]
         }
     },
