@@ -13,7 +13,21 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    (function(symbolName) {
       
       
+      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+         sym.$("container").html('<iframe scrolling="no" src="fondos/canvas_01.html" width="1025" height="688" frameborder="0"></iframe>');
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
+
+   //=========================================================
+   
+   //Edge symbol: 'footer'
+   (function(symbolName) {   
+   
+   })("footer");
+   //Edge symbol end:'footer'
 
 })(jQuery, AdobeEdge, "EDGE-26067516");
