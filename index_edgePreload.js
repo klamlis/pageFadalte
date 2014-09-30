@@ -52,6 +52,8 @@ if(document.addEventListener ){
    aLoader = [
       { load: "edge_includes/jquery-2.0.3.min.js"},
       { load: "edge_includes/edge.4.0.1.min.js"},
+      { load: "http://cdn.edgecommons.org/an/1.1.2/js/min/EdgeCommons.js", user: true },
+      { load: "http://cdn.edgecommons.org/an/1.1.2/css/style.css", user: true },
       { load: "index_edge.js"},
       { load: "index_edgeActions.js"}];
 
@@ -61,7 +63,15 @@ loadResources(aLoader, doDelayLoad);
 
 var plSTF="both",ctrPlS="both",minPlW="0",maxPlW=undefined,plWidth="1024px",plHeight="768px";
 
-preContent={dom: [ ]};//simpleContent
+preContent={
+    dom: [
+    {
+        id: 'preloader5',
+        type: 'image',
+        tag: 'img',
+        rect: ['468', '340','88px','88px','auto', 'auto'],
+        fill: ["rgba(0,0,0,0)",'images/preloader5.gif','0px','0px']
+    }]};//simpleContent
 
 dlContent={dom: [ ]};//simpleContent
 
